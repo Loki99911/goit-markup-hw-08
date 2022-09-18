@@ -32,18 +32,11 @@
 
 .team-content {
     padding-top: 30px;
-    padding-right: 122px;
+    padding-right: 15px;
     padding-bottom: 24px;
-    padding-left: 122px;
-   
-    @include tablet{
-        padding-right: 74px;
-        padding-left: 74px;
-    }
+    padding-left: 15px;
 
     @include desktop{
-        padding-right: 32px;
-        padding-left: 32px;
         padding-bottom: 30px;
     }
 }

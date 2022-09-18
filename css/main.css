@@ -211,7 +211,9 @@ body.modal-open {
 }
 
 .menu-button.is-open + .menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .menu-button.is-open {
@@ -264,9 +266,17 @@ body.modal-open {
   transform: translate(-50%, -50%);
 }
 
+.menu__nav {
+  margin-bottom: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu__nav {
+    margin-bottom: 0;
+  }
+}
+
 .site-nav {
   display: block;
-  margin-bottom: 302px;
 }
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -409,6 +419,8 @@ body.modal-open {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
+  bottom: 0;
   gap: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -461,7 +473,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer__container {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
   }
 }
 
@@ -475,6 +487,7 @@ body.modal-open {
 .footer-tablet {
   display: block;
   margin-bottom: 60px;
+  align-items: baseline;
 }
 @media screen and (min-width: 768px) {
   .footer-tablet {
@@ -578,7 +591,6 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer-join {
     display: block;
-    margin-top: 12px;
     margin-left: 70px;
   }
 }
@@ -621,7 +633,6 @@ body.modal-open {
     align-items: flex-start;
     width: auto;
     margin-left: auto;
-    margin-top: 12px;
   }
 }
 
@@ -912,20 +923,12 @@ body.modal-open {
 
 .team-content {
   padding-top: 30px;
-  padding-right: 122px;
+  padding-right: 15px;
   padding-bottom: 24px;
-  padding-left: 122px;
-}
-@media screen and (min-width: 768px) {
-  .team-content {
-    padding-right: 74px;
-    padding-left: 74px;
-  }
+  padding-left: 15px;
 }
 @media screen and (min-width: 1200px) {
   .team-content {
-    padding-right: 32px;
-    padding-left: 32px;
     padding-bottom: 30px;
   }
 }

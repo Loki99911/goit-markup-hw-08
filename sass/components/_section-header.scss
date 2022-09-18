@@ -76,7 +76,9 @@
         }
 }
 .menu-button.is-open + .menu{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 .menu-button.is-open{
     z-index: 2;
@@ -126,10 +128,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.menu__nav{
+    margin-bottom: auto;
 
+    @include tablet{
+        margin-bottom: 0;
+    }
+}
 .site-nav {
     display: block;
-    margin-bottom: 302px;
     
     @include tablet {
         display: flex;
@@ -264,11 +271,12 @@
 
 .social{
     display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
     gap: 20px;
 
     @include tablet {
         display: none;
-        
     }
 }
 .contact__text{

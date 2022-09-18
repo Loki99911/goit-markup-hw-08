@@ -11,7 +11,7 @@
 
     @include desktop {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
     }
 }
 
@@ -24,6 +24,7 @@
 .footer-tablet{
     display: block;
     margin-bottom: 60px;
+    align-items: baseline;
 
     @include tablet{
         display:flex
@@ -121,7 +122,6 @@
 
     @include desktop{
         display: block;
-        margin-top: 12px;
         margin-left: 70px;
     }
 }
@@ -165,7 +165,6 @@
         align-items: flex-start;
         width: auto;
         margin-left: auto;
-        margin-top: 12px;
     }
 }
 
