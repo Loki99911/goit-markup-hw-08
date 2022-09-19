@@ -118,6 +118,10 @@ body.modal-open {
   cursor: pointer;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   font-weight: 500;
   font-size: 24px;
